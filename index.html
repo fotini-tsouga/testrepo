@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<!-- HEADER -->
+<header class="navbar">
+
+  <div class="header-left">
+    <div class="profile_name">Foteini Maria Tsouga</div>
+
+    <div class="contact_info">
+      <div class="contact_item">✉ foteini@example.com</div>
+      <div class="contact_item">☏ +49 123 456 789</div>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
+  </div>
+
+</header>
+
+
+<div class="container">
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <img src="images/profile_icon.png" class="profile">
+
+  <div class="about-text">
+    <h1>Hi, I'm Foteini Maria Tsouga! 👋</h1>
+    <p>
+      I am a full stack developer with 2 years of experience in applications
+      and microservices deployed on IBM Cloud. I work with AI services like
+      Watson Assistant, NLU and sentiment analysis.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill">
+      <img src="images/html.png">
+      <p>HTML<br><span>2 years experience</span></p>
+    </div>
+
+    <div class="skill">
+      <img src="images/js.png">
+      <p>JavaScript<br><span>1.5 years experience</span></p>
+    </div>
+
+    <div class="skill">
+      <img src="images/java.png">
+      <p>Java<br><span>.5 years experience</span></p>
+    </div>
+
+    <div class="skill">
+      <img src="images/react.png">
+      <p>React<br><span>1 year experience</span></p>
+    </div>
+
+    <div class="skill">
+      <img src="images/node.png">
+      <p>Node.js<br><span>3 years experience</span></p>
+    </div>
+
+    <div class="skill">
+      <img src="images/css.png">
+      <p>CSS<br><span>2 years experience</span></p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project">
+        <h3>Task Manager Web App</h3>
+        <ul>
+          <li>
+            Built a responsive task management application that allows users to create, edit, and delete tasks. Implemented local storage to persist data and used JavaScript for dynamic UI updates.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Weather Dashboard</h3>
+        <ul>
+          <li>
+            Developed a weather app that fetches real-time weather data from an API and displays temperature, humidity, and conditions based on user input. 
+            Includes error handling and responsive design.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <ul>
+          <li>
+            Designed and developed a personal portfolio site showcasing skills, projects, and contact information. Built using HTML, CSS, and JavaScript with responsive layout and smooth navigation.
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section id="recommendations">
+      <h2 class="section-title">Recommendations</h2>
+
+      <div id="rec-list">
+        <div class="rec">
+          "Foteini is a very quick learner and quickly grasps key concepts of Web development."
+        </div>
+
+        <div class="rec">
+          "Working with Foteini has been an awesome experience."
+        </div>
+
+        <div class="rec">
+          "I had worked along with Foteini during the initial phase of our venture."
+        </div>
+      </div>
+
+
+      <h3 class="leave-title">Leave a Recommendation</h3>
+
+      <div class="form-box">
+        <input id="name" placeholder="Name (Optional)">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button class="submit-btn" onclick="addRecommendation()">Submit</button>
+      </div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p>Thank you for submitting a recommendation!</p>
+          <button onclick="showPopup(false)">OK</button>
+        </div>
+      </div>
+
+    </section>
+
+</div>
+
+ <!-- HOME BUTTON -->
+  <a href="#top" class="home-btn">↑</a>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
